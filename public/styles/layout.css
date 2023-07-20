@@ -16,10 +16,45 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  Line-height: 1.6; 
 }
+  .nav .header-right {
+    margin: 0 1.5em;
+  }
+
+nav span {
+  font-family: 'Bungee', sans-serif; /* Specify Bungee font for the Tweeter logo in the nav */
+
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* ... Other styles ... */
+
+.counter.exceeded {
+  color: red;
+}
+
+/* Import the Source Sans 3 font for the entire body */
+body {
+  font-family: 'Source Sans', sans-serif;
+}
+
+/* Apply the Bungee font to the Tweeter logo in the nav */
+.nav-logo {
+  font-family: 'Bungee', sans-serif;
+}
+
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+

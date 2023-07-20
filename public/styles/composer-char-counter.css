@@ -1,0 +1,10 @@
+/* composer-char-counter.css */
+.new-tweet .counter {
+  color: #545149;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.new-tweet .counter.invalid {
+  color: red;
+}
