@@ -19,8 +19,8 @@ https://github.com/Giftojcs/tweeter/blob/2d36c73ebc5dec0da562b6708e5b8a210c290e0
 
 - Express
 - Node 5.10.x or above
-- Body-parser": "^1.15.2",
-- chance": "^1.1.11",
-- Express": "^4.13.4",
-- md5": "^2.1.0"
-- Nodemon": "^1.9.2"
+- Body-parser: 1.15.2
+- chance: 1.1.11
+- Express: 4.13.4
+- md5: 2.1.0
+- Nodemon: 1.9.2
