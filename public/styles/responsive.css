@@ -1,0 +1,30 @@
+.tweet-container {
+  display: flex;
+  /* Mobile layout (flex-direction: column) */
+  flex-direction: column;
+}
+
+.username {
+  font-size: 16px;
+}
+
+.tweet-text {
+  font-size: 18px;
+}
+
+/* For desktop screens (1024px and above) */
+@media screen and (min-width: 1024px) {
+  .tweet-container {
+    /* Desktop layout (flex-direction: row) */
+    flex-direction: row;
+  }
+
+  .username {
+    font-size: 20px;
+  }
+
+  .tweet-text {
+    font-size: 22px;
+  }
+}
+

@@ -1,0 +1,8 @@
+.error-message {
+  display: none; /* Hide the error message by default */
+  background-color: #f44336; /* Red background color for error messages */
+  color: white; /* White text color for better contrast */
+  padding: 10px; /* Add some padding for spacing */
+  border-radius: 4px; /* Rounded corners for a cleaner look */
+  margin-bottom: 10px; /* Add some space between the error message and other elements */
+}

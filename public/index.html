@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tweet App</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
+  <link rel="stylesheet" href="/styles/layout.css">
+  <link rel="stylesheet" href="/styles/nav.css">
+  <link rel="stylesheet" href="/styles/new-tweet.css">
+  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/tweets.css"> <!-- Add this line for tweets styling -->
+  <link rel="stylesheet" href="/styles/error.css"> <!-- Add this line for error styling -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Source+Sans:wght@300;600;300i;600i&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&display=swap">
+</head>
 
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+<body>
+  <nav>
+    <!-- Add your navigation links here -->
 
-    <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <span class="nav-logo">Tweeter</span>
+    <div>
+      <span class="write-tweet-text">Write a new tweet</span>
+      <i class="fas fa-angle-double-down"></i>
+    </div>
+  </nav>
+  <header class="site-header">
+    <div class="avatar">
+      <img src="/images/profile-hex.png" alt="Profile Avatar">
+    </div>
+    <div class="name">
+      <h2>Gift Ojaigho</h2>
+    </div>
+  </header>
+  <div class="site-content"> 
+    <!-- Compose Tweet section -->
+    <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form id="tweet-form">
+        <label for="tweet-text">What are you humming about?</label>
+        <textarea name="text" id="tweet-text"></textarea>
+        <!-- Add the error message element with a unique ID -->
+        <div id="error-message" class="error-message"></div>
+        <div>
+          <button type="submit">Tweet</button>
+          <output name="counter" class="counter">140</output>
+        </div>
+      </form>
+    </section>
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
-  </head>
+    <!-- Tweets container -->
+    <section id="tweets-container"></section>
+  </div>
+  <!-- Include your client-side JavaScript file -->
+  <script src="/scripts/client.js"></script>
+  <script src="/scripts/composer-char-counter.js"></script>
+</body>
 
-  <body>
-    <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
-    </nav>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container"></main>
-  </body>
 </html>

@@ -5,6 +5,12 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 
+
+/*app.get("/styles/tweets.css", (req, res) => {
+  res.type("text/css");
+  res.sendFile(__dirname + "/public/styles/tweets.css");
+});
+*/
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
@@ -18,5 +24,3 @@ app.use("/tweets", tweetsRoutes);
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
 });
-
-

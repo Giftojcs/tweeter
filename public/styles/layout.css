@@ -19,6 +19,7 @@ body {
   font-size: 24px;
   font-family: 'Arial', sans-serif;
   Line-height: 1.6; 
+  display: flex;
 }
   .nav .header-right {
     margin: 0 1.5em;

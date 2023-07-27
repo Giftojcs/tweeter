@@ -11,6 +11,8 @@
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .tweet header img {
@@ -60,5 +62,6 @@
 .tweet:hover .icons i {
   color: #4056A1;
 }
+
 
 
