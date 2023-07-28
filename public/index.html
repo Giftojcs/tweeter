@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/styles/new-tweet.css">
   <link rel="stylesheet" href="/styles/header.css">
   <link rel="stylesheet" href="/styles/tweets.css"> <!-- Add this line for tweets styling -->
+  <link rel="stylesheet" href="/styles/composer-char-counter.css">
   <link rel="stylesheet" href="/styles/error.css"> <!-- Add this line for error styling -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet"
@@ -29,6 +30,8 @@
       <i class="fas fa-angle-double-down"></i>
     </div>
   </nav>
+<!-- add a class and add the display flex and different flex direction depending on which type (desktop or mobile) -->
+<div class="container"> 
   <header class="site-header">
     <div class="avatar">
       <img src="/images/profile-hex.png" alt="Profile Avatar">
@@ -37,7 +40,7 @@
       <h2>Gift Ojaigho</h2>
     </div>
   </header>
-  <div class="site-content"> 
+  <div class="site-content">
     <!-- Compose Tweet section -->
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
@@ -56,6 +59,7 @@
     <!-- Tweets container -->
     <section id="tweets-container"></section>
   </div>
+</div>
   <!-- Include your client-side JavaScript file -->
   <script src="/scripts/client.js"></script>
   <script src="/scripts/composer-char-counter.js"></script>

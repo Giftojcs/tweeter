@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     tweets.forEach(function(tweet) {
       const $tweet = renderTweet(tweet);
-      $tweetsContainer.append($tweet);
+      $tweetsContainer.prepend($tweet);
     });
   };
 
@@ -61,6 +61,7 @@ $(document).ready(function() {
         data: $(this).serialize()
       })
       .then(() => {
+        $('#tweet-text').val('');
         loadTweets();
       });
     }
